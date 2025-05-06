@@ -11,12 +11,12 @@ class IntegerCalculatorUnitTest {
 
     @Test
     void testSum() {
-        assertEquals(10, calculator.sum(4, 3, 2, 1));
+        assertEquals(10, calculator.sum(4, 3, 2, 1),"No correct sum");
     }
 
     @Test
     void testSubtract() {
-        assertEquals(-6, calculator.subtract(1, 2, 3, 2));
+        assertEquals(-6, calculator.subtract(1, 2, 3, 2), "No correct subtraction");
     }
 
     @Test

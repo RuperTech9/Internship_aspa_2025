@@ -1,6 +1,7 @@
 package pruebasUnitarias;
 
 import java.util.Arrays;
+import java.util.stream.Stream;
 
 /**
  * Implementación de Calculator para Integer.
@@ -18,7 +19,7 @@ public class IntegerCalculator implements Calculator<Integer> {
     @Override
     public Integer sum(final Integer... numbers) throws IllegalArgumentException {
         validate(numbers); // Verifico que no haya nulls
-        return Arrays.stream(numbers)           // Crea un flujo de números
+        return Stream.of(numbers)           // Crea un flujo de números
                 .mapToInt(Integer::intValue)    // Los convierte a int primitivo
                 .sum();                         // Realiza la suma total
     }
