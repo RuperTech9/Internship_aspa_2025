@@ -6,9 +6,9 @@ public class Ejercicio_1 {
         // Compruebo si obj es instancia de String
         // Si lo es, automáticamente hace el cast y lo guarda en una nueva variable s
         if (obj instanceof String s) {
-            System.out.println("Longitud: " + s.length()); // Ya puedo usar s directamente, sin hacer (String) obj
+            System.out.println("Length: " + s.length()); // Ya puedo usar s directamente, sin hacer (String) obj
         } else {
-            System.out.println("No es un String.");
+            System.out.println("Not a String.");
         }
     }
 

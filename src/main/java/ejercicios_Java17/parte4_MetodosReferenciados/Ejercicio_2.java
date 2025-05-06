@@ -11,6 +11,7 @@ public class Ejercicio_2 {
 
         // Usamos método referenciado para ordenar ignorando mayúsculas/minúsculas
         words.sort(String::compareToIgnoreCase);
+        //.stream, .sorted, et
 
         System.out.println(words);
     }

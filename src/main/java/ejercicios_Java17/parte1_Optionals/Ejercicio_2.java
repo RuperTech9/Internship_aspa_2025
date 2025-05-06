@@ -18,7 +18,7 @@ public class Ejercicio_2 {
     }
 
     public static void main(String[] args) {
-        System.out.println(parseInteger("0042"));     // Optional[42]
+        System.out.println(parseInteger("0042").orElse(0));     // Optional[42]
         System.out.println(parseInteger("pepe"));   // Optional.empty
         System.out.println(parseInteger("3.14"));   // Optional.empty
         System.out.println(parseInteger(null));     // Optional.empty
